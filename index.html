@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RUET Coverpage Generator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="no-print input-section">
+       <h2>Coverpage Data Entry</h2>
+       <label>Course No: <input type="text" id="courseNo" placeholder="e.g., CSE 3206"></label>
+       <label>Course Name: <input type="text" id="courseName" placeholder="Software Engineering Sessional"></label>
+       <label>Experiment Name: <input type="text" id="expName" placeholder="Software Configuration Management"></label>
+       <label>Student Name: <input type="text" id="studentName" placeholder="Your Name"></label>
+       <label>Roll No: <input type="text" id="rollNo" placeholder="Your Roll"></label>
+       <button onclick="window.print()">Print Coverpage</button>
+   </div>
+ 
+   <div class="print-section cover-page">
+       <div class="header">
+           <h3>Heaven's Light is Our Guide</h3>
+           <h1>Rajshahi University of Engineering & Technology</h1>
+           <h2>Department of Computer Science & Engineering</h2>
+           <h1 class="lab-title">LAB REPORT</h1>
+       </div>
+       
+       <div class="course-info">
+           <p><strong>Course No:</strong> <span id="outCourseNo"></span></p>
+           <p><strong>Course Name:</strong> <span id="outCourseName"></span></p>
+           <p><strong>Name of the Experiment:</strong> <span id="outExpName"></span></p>
+       </div>
+ 
+       <div class="student-info">
+           <p><strong>Prepared By:</strong></p>
+           <p>Name: <span id="outStudentName"></span></p>
+           <p>Roll: <span id="outRollNo"></span></p>
+       </div>
+   </div>
+ 
+   <script src="script.js"></script>
+</body>
+</html>
